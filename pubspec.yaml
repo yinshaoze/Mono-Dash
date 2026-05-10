@@ -82,6 +82,13 @@ dev_dependencies:
   json_serializable: ^6.8.0
   flutter_launcher_icons: ^0.14.4
 
+dependency_overrides:
+  # Newer path_provider platform implementations use Dart native assets
+  # through jni/objective_c. Keep the method-channel implementations until
+  # the native_assets SdkRoot toolchain issue is no longer present.
+  path_provider_android: 2.2.22
+  path_provider_foundation: 2.5.1
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
