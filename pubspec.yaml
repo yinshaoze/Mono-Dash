@@ -59,7 +59,7 @@ dependencies:
   xterm:
     git:
       url: https://github.com/yinshaoze/xterm.dart.git
-      ref: main
+      ref: master
 
   flutter_markdown: ^0.7.7+1
   url_launcher: ^6.3.2
